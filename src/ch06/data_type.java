@@ -21,7 +21,9 @@ public class data_type {
 		 * 리터럴 : 숫자 문자 문자열 등등 나타내는 걸 리터럴이라고한다.
 		 * int num=> 4byte 
 		 */
-		byte bNum = -128 ;
+		byte bNum = -127;
+		int num = 123456789;
+		long lNum= 12345678900L; // long은 integer -> long으로 숫자뒤에 L를 넣어라;
 		
 	
 	}
