@@ -1,6 +1,6 @@
 package ch08;
 
-public class ChararterTest {
+public class CharacterTest {
 
 	public static void main(String[] args) {
 		// 문자도 정수로 표현합니다.
@@ -22,7 +22,17 @@ public class ChararterTest {
 		int ch3 = 67;
 		System.out.println(ch3);
 		System.out.println((char)ch3);
-		//chararter 형은 2바이트이고 유니코드 특징은  내부적으로 문자에대한 정수값을 가지고있다. 음수은 안되고 양수만 된다.
+		//character 형은 2바이트이고 유니코드 특징은  내부적으로 문자에대한 정수값을 가지고있다. 음수은 안되고 양수만 된다.
+		 char han = '한';
+		 char ch = '\uD55C';
+		 
+		 System.out.println(han);
+		 System.out.println(ch);
+		 /* character 
+		  * 
+		  */
+	
 	}
+	
 
 }
