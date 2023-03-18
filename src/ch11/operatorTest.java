@@ -1,4 +1,4 @@
-package ch10;
+package ch11;
 
 public class operatorTest {
 	public static void main(String[] args) {
@@ -25,7 +25,6 @@ public class operatorTest {
 	int lastSocre1 = ++gameScore;
 	int lastSocre2= gameScore++;
 	System.out.println(lastSocre1); //gameSocre +=1; gameScore =gameScore+1;
-	
 	System.out.println(lastSocre2);
 	System.out.println(gameScore);
 	
