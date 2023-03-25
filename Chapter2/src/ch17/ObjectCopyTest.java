@@ -16,6 +16,18 @@ public class ObjectCopyTest {
 		System.arraycopy(libray, 0, copylibray, 0, 5);
 		
 		
+//		System.out.println("== libray ==");
+//		for (Book book :libray) {
+//			System.out.println(book);
+//			book.showInfo(); 
+//		}
+//		System.out.println("== copylibray ==");
+//		for (Book book :libray) {
+//			System.out.println(book);
+//			book.showInfo(); 
+//		}
+		libray[0].setAuthor("박완서 "); // 저자 변경하기
+		libray[0].setTitle("니목"); //제목 변경하기 
 		System.out.println("== libray ==");
 		for (Book book :libray) {
 			System.out.println(book);
