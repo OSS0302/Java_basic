@@ -38,6 +38,7 @@ public class ObjectCopyTest {
 			System.out.println(book);
 			book.showInfo(); 
 		}
+		// 얇은 복사: 라이브러리 배열과 카피 배열 얇은 복사는 했지만 값의 주소 가르치 때문에  같은 값이 나온다.
 	}
 	
 }
