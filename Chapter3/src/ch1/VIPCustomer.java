@@ -5,7 +5,7 @@ public class VIPCustomer extends Customer {
 	
 	
 	double saleRatio; // 할인 율 적용
-	String agentID; // 개인 상담 에이전트
+	private int  agentID; // 개인 상담 에이전트
 	
 	public VIPCustomer() {
 		
@@ -13,6 +13,9 @@ public class VIPCustomer extends Customer {
 		saleRatio= 0.1; // 할인율 적용
 		customerGrade ="VIP";
 		
+	}
+	public int getAgentID() {
+		return agentID;
 	}
 
 }
