@@ -2,9 +2,9 @@ package ch1;
 
 public class Customer {
 
-	private int  custmerID;// 고객아이디
-	private String customerName; //고객이름
-	private String customerGrade; // 고객 등급 
+	protected int  custmerID;// 고객아이디
+	protected String customerName; //고객이름
+	protected String customerGrade; // 고객 등급 
 	int bounsPoint ; // 보너스 포인트 
 	double bounsRatio; // 포인트적립 
 	
