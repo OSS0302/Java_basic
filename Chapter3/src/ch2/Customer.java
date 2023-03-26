@@ -23,10 +23,6 @@ public class Customer {
 	bounsRatio = 0.01; //0.01포인트 적립
 	System.out.println("Customer(int, String) call ");
 	}
-	
-
-	
-
 
 	public int calPrice(int price) {
 		bounsPoint += price *bounsRatio;
