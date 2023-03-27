@@ -32,7 +32,7 @@ class Tiger extends Animal{
 		System.out.println("호랑이가 사냥을 합니다");
 	}
 }		
-class Engle extends Animal{
+class Eagle extends Animal{
 	public void move() {
 		System.out.println("독수리가 하늘을 날아 다닙니다.");
 	}
@@ -48,7 +48,7 @@ public class AnimalTest {
 	public static void main(String[] args) {
 	Animal hAnimal = new Human();
 	Animal tAnimal = new Tiger();
-	Animal eAnimal = new Engle();
+	Animal eAnimal = new Eagle();
 	
 	AnimalTest test = new AnimalTest();
 	test.moveAnimal(hAnimal);
