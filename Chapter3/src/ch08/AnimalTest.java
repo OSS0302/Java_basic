@@ -84,7 +84,7 @@ public class AnimalTest {
 				Eagle eagle = (Eagle)animal;
 				eagle.flying();
 				
-			}else {
+			}else { //타입이 없다면 지원되지 않는 타입이다.
 				System.out.println("unsupported type");
 			}
 		}
