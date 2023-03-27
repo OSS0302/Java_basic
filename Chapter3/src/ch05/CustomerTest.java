@@ -26,5 +26,9 @@ public class CustomerTest {
 	for (Customer customer :customerList) {
 		System.out.println(customer.showCustomer()); // 고객정보  보기 
 	}
+	int price =10000;
+	for(Customer customer : customerList) {
+		int cost = customer.calPrice(price);
+	}
 	}
 }
