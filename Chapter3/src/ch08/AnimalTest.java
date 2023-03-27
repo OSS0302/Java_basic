@@ -32,7 +32,7 @@ class Tiger extends Animal{
 		System.out.println("호랑이가 사냥을 합니다");
 	}
 }		
-class Engle extends Animal{
+class Eagle extends Animal{
 	public void move() {
 		System.out.println("독수리가 하늘을 날아 다닙니다.");
 	}
@@ -48,7 +48,7 @@ public class AnimalTest {
 	public static void main(String[] args) {
 	Animal hAnimal = new Human();
 	Animal tAnimal = new Tiger();
-	Animal eAnimal = new Engle();
+	Animal eAnimal = new Eagle();
 	
 	AnimalTest test = new AnimalTest();
 	test.moveAnimal(hAnimal);
@@ -57,13 +57,16 @@ public class AnimalTest {
 	
 	
 	ArrayList<Animal> animalList =new ArrayList<>();
-	animalList.add(hAnimal); //사람객체 을 리스트에 넣겠다.
-	animalList.add(tAnimal); //호랑객체 을 리스트에 넣겠다.
-	animalList.add(eAnimal); // 독수리객체를 리스트에넣겠다.
+//	animalList.add(hAnimal); //사람객체 을 리스트에 넣겠다.
+//	animalList.add(tAnimal); //호랑객체 을 리스트에 넣겠다.
+//	animalList.add(eAnimal); // 독수리객체를 리스트에넣겠다.
 	
 	for (Animal animal :animalList) {
 		animal.move();
+		
 	}
+	test.testDownCasting(animalList);  // 코드가 길어지고 가능하다면 다형성를 하자 
+	
 }
 	public void testDownCasting(ArrayList<Animal>list) {
 		for (int i =0; i<list.size(); i++) {
@@ -77,10 +80,12 @@ public class AnimalTest {
 				tiger.hunting();
 				
 			}
-			else if (animal instanceof Engle) {
-				Engle engle = (Engle)animal;
-				engle.flying();
+			else if (animal instanceof Eagle) {
+				Eagle eagle = (Eagle)animal;
+				eagle.flying();
 				
+			}else {
+				System.out.println("unsupported type");
 			}
 		}
 	}
