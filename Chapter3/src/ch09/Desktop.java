@@ -11,6 +11,11 @@ public  class Desktop extends Computer {// 추상메서드를포함한 추상 �
 	void typing() {
 		System.out.println("Desktop typing");
 	}
+
+	@Override
+	void turnOff() {
+		System.out.println("Desktop turn off");
+	}
 	
 	  
 
