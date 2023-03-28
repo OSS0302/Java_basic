@@ -14,7 +14,7 @@ public  class Desktop extends Computer {// 추상메서드를포함한 추상 �
 
 	@Override
 	void turnOff() {
-		System.out.println("Desktop turn off");
+		System.out.println("전원을 끕니다.");
 	}
 	
 	  
