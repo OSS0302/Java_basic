@@ -15,4 +15,9 @@ public class AICar extends Car{
 		System.out.println("장애물 앞에서 스스로 멈춥니다.");
 	}
 
+	@Override
+	public void wiper() {
+		System.out.println("자동 세차를 합니다.");
+	}
+
 }
