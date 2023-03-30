@@ -20,16 +20,28 @@ public class UserInfoClient {
 		String dbType = prop.getProperty("DBTYPE");
 		UserInfo userInfo = new UserInfo();
 		UserInfoDao userInfoDao = null;
+		userInfo.setUserId("아이폰");
+		userInfo.setPassWord("!@#$");
+		userInfo.setUserName("Lee");
+		  
 		
-		if(dbType.equals("ORACLE")) {
+		if(dbType.equals("ORACLE")) 
+		{
 		userInfoDao = new UserInfoOracleDao();
 		
-		}else if(dbType.equals("MYSQL")) {
+		}else if(dbType.equals("MYSQL")) 
+		{
 			userInfoDao =new UserInfoMysqlDao();
-		}else {
+		}else{
 			
-		}System.out.println("db.orror");
+			
+		System.out.println("db.orror");
 		return;
+		
+		}
+	userInfoDao.insertUserInfo(userInfo);
+	userInfoDao.updateUserInfo(userInfo);
+	userInfoDao.deleteUserInfo(userInfo);
 	}
 }
 
