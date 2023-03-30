@@ -20,7 +20,7 @@ public class UserInfoClient {
 		String dbType = prop.getProperty("DBTYPE");
 		UserInfo userInfo = new UserInfo();
 		UserInfoDao userInfoDao = null;
-		userInfo.setUserId("아이폰");
+		userInfo.setUserId("12345");
 		userInfo.setPassWord("!@#$");
 		userInfo.setUserName("Lee");
 		  
