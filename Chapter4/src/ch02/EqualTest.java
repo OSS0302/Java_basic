@@ -2,7 +2,7 @@ package ch02;
 
 public class EqualTest {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws CloneNotSupportedException {
 		Student Lee = new Student(100, "Lee");
 		Student Lee2 = Lee;
 		Student Shun = new Student(100, "Lee");
@@ -23,6 +23,13 @@ public class EqualTest {
 		
 		System.out.println(System.identityHashCode(i1));
 		System.out.println(System.identityHashCode(i2));
+		
+		// clone 메서드 테스트하기 
+		  Student Lee3 = (Student)Lee.clone();
+			System.out.println(System.identityHashCode(Lee));
+			System.out.println(System.identityHashCode(Lee3));
+				
+
 
 	}
 
