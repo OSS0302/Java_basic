@@ -31,7 +31,15 @@ public class Student1 implements Cloneable{
 			return studentNum;
 			
 			
-			}
+		}
+
+		@Override
+		protected Object clone() throws CloneNotSupportedException {
+			// TODO Auto-generated method stub
+			return super.clone();
+		}
+	
+		
 	
 
 }
