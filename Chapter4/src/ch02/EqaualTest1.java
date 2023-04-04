@@ -8,6 +8,7 @@ public class EqaualTest1 {
 		
 		System.out.println(std1 == std2); //다른 객체여서 false 이 뜬다
 		System.out.println(std1.equals(std2)); //문자열이 같은지 확인했을때 주소값이 같은지 확인
+		
 		// 해쉬 코드 출력하기
 		System.out.println(std1.hashCode());
 		System.out.println(std2.hashCode());
@@ -20,6 +21,10 @@ public class EqaualTest1 {
 		//여기 서 같은 해쉬 코드 값이 나오는걸 알수있다.
 		System.out.println(str1.hashCode());
 		System.out.println(str2.hashCode());
+		
+		// 정수값 확인하기 
+		Integer i =100;
+		System.out.println(i.hashCode());
 	}
 
 }
