@@ -26,14 +26,15 @@ public class EqaualTest1 {
 		Integer i =100;
 		System.out.println(i.hashCode());
 		// 해쉬코드 진짜 해쉬코드 값을 출력해주는 static함수
-		// 가상 메모리 값을 출력한다.
+		// 가상 메모리 값을 출력한다. 
 		System.out.println(System.identityHashCode(std1));
 		System.out.println(System.identityHashCode(std2));
 		
 		//clone 클론 메서드
 		
-		
+		std1.setStudent1("Kim");
 		Student1 copyStudent = (Student1)std1.clone(); 
+		System.out.println(copyStudent );
 	}
 
 }

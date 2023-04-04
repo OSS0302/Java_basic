@@ -12,8 +12,11 @@ public class Student1 implements Cloneable{
 	public String toString() {
 		return studentNum+","+studentName; 
 	}
-
 	
+	
+	public void setStudent1(String name) {
+		this.studentName = name; 
+	}
 
 	@Override
 	public boolean equals(Object obj) {
