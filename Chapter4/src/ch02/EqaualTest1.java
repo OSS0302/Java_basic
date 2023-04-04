@@ -1,7 +1,7 @@
 package ch02;
 
 public class EqaualTest1 {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws CloneNotSupportedException {
 		Student1 std1 = new Student1(100,"Lee");
 		Student1 std2 = new Student1(100,"Lee");
 		
@@ -29,6 +29,11 @@ public class EqaualTest1 {
 		// 가상 메모리 값을 출력한다.
 		System.out.println(System.identityHashCode(std1));
 		System.out.println(System.identityHashCode(std2));
+		
+		//clone 클론 메서드
+		
+		
+		Student1 copyStudent = (Student1)std1.clone(); 
 	}
 
 }
