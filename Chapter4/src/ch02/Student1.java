@@ -1,6 +1,6 @@
 package ch02;
 
-public class Student1 {
+public class Student1 implements Cloneable{
 	private int studentNum; // 학번
 	private String studentName; //학생이름
 	
