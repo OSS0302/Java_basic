@@ -25,6 +25,10 @@ public class EqaualTest1 {
 		// 정수값 확인하기 
 		Integer i =100;
 		System.out.println(i.hashCode());
+		// 해쉬코드 진짜 해쉬코드 값을 출력해주는 static함수
+		// 가상 메모리 값을 출력한다.
+		System.out.println(System.identityHashCode(std1));
+		System.out.println(System.identityHashCode(std2));
 	}
 
 }
