@@ -10,6 +10,11 @@ public class MyArrayStackTest {
 		stack.push(40);
 		
 		stack.printAll(); // 전체 출력하기 
+		
+		System.out.println(stack.pop());
+		System.out.println(stack.pop());
+		System.out.println(stack.peek());
 	}
+
 
 }
