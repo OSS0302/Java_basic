@@ -10,13 +10,13 @@ MemberArrayList memberArrayList = new MemberArrayList();
 		Member memberOh = new Member(1003,"오나라","서울 특별시영등포구 ");
 		
 		
-		memberArrayList.addMember(memberLee);// 이경영 리스트에 넣기
-		memberArrayList.addMember(memberKim);// 김우빈 리스트에 넣기
-		memberArrayList.addMember(memberOh);
+		memberArrayList.addMember(memberLee);// 이지연 리스트에 넣기
+		memberArrayList.addMember(memberKim);// 김태리 리스트에 넣기
+		memberArrayList.addMember(memberOh); // 오나라 리스트에 넣기
 		
 		memberArrayList.showAllMember(); //보기
 		
-		memberArrayList.removeMember(memberOh.getMemberId());
+		memberArrayList.removeMember(memberOh.getMemberId()); // 삭제하
 		
 		memberArrayList.showAllMember(); //보기
 
