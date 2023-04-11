@@ -1,9 +1,14 @@
 package ch13;
 
-public class Member implements Comparable<Member> {
+import java.util.Comparator;
+
+public class Member implements Comparator<Member> {
 	private int memberId; // 회원 아이디 
 	private String memberName; //회원 이름
 	private String address; // 회원 주소
+	
+	// 기본 생성자 추가하기
+	public Member() {}
 
 	public Member(int memberId, String memberName, String address) {
 		this.memberId = memberId;
@@ -48,10 +53,18 @@ public class Member implements Comparable<Member> {
 	}
 		else return false;
 		}
+	// 
+//	@Override  //treeSet 오름차순과 내림차순을  구현할 수있다.. 
+//	public int compareTo(Member member) { // 콜백 function
+//		//return (this.memberId - member.memberId); // 오름차순 
+//		return (this.memberId - member.memberId)* (-1); // 내림차순 
+//	}
 
-	@Override  //treeSet 오름차순과 내림차순을  구현할 수있다.. 
-	public int compareTo(Member member) { // 콜백 function
-		//return (this.memberId - member.memberId); // 오름차순 
-		return (this.memberId - member.memberId)* (-1); // 내림차순 
+	@Override
+	public int compare(Member member1, Member member2) {
+		//return (member1.memberId - member2.memberId) ; //오름차순인경우
+		// return (member2.memberId - member1.memberId) ; //내림차순인경우
+		return (member1.memberId - member2.memberId)*(-1) ; //내림차순인경우
 	}
+	
 }
