@@ -51,10 +51,7 @@ public class Member implements Comparable<Member> {
 
 	@Override  //treeSet 오름차순과 내림차순을  구현할 수있다.. 
 	public int compareTo(Member member) { // 콜백 function
-		if(this.memberId> member.memberId) // this.memberId> member.memberId 크면 1로 반환하고 작으면 0을 반환하고  같으면 0을 반환한다.
-		return -1; // 오름차순 일때 1 내림차순일 떄 -1 
-		else if(this.memberId <memberId) 
-			return 1;   // 오름차순 일때 -1 내림차순일 떄 1 
-		else return 0; 
+		//return (this.memberId - member.memberId); // 오름차순 
+		return (this.memberId - member.memberId)* (-1); // 내림차순 
 	}
 }
