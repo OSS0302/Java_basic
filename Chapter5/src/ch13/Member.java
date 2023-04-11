@@ -50,12 +50,12 @@ public class Member implements Comparable<Member> {
 		}
 	
 
-	@Override
+	@Override  //treeSe 오름차순 구성된다. 
 	public int compareTo(Member member) { // 콜백 function
-		if(this.memberId> member.memberId)
-		return 1;
-		else if(this.memberId <memberId)
-			return-1;
-		else return 0;
+		if(this.memberId> member.memberId) // this.memberId> member.memberId 크면 1로 반환하고 작으면 0을 반환하고  같으면 0을 반환한다.
+		return 1; // 
+		else if(this.memberId <memberId) 
+			return-1;   
+		else return 0; 
 	}
 }
