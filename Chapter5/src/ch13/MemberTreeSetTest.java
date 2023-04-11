@@ -3,6 +3,7 @@ package ch13;
 public class MemberTreeSetTest {
 
 	public static void main(String[] args) {
+		System.out.println("오름차순인경우");
 		MemberTreeSetList TreeSet = new MemberTreeSetList();
 		
 		Member memberLee = new Member(1001, "이지연" ,"서울특별시 서초구");

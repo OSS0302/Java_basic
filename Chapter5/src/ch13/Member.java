@@ -50,7 +50,7 @@ public class Member implements Comparable<Member> {
 		}
 	
 
-	@Override  //treeSe 오름차순 구성된다. 
+	@Override  //treeSet 오름차순과 내림차순을  구현할 수있다.. 
 	public int compareTo(Member member) { // 콜백 function
 		if(this.memberId> member.memberId) // this.memberId> member.memberId 크면 1로 반환하고 작으면 0을 반환하고  같으면 0을 반환한다.
 		return 1; // 
