@@ -9,7 +9,7 @@ public class StringConcatTest {
 		StringConcatInpl strImpl = new StringConcatInpl();
 		strImpl.makeString("Hello","Chicken "); // 호출하기 
 		
-		// 람다식 으로 
+		// 람다식 으로 테스트하기
 		StringConcat concat = (s,v)->System.out.println(s+","+v);
 		concat.makeString(s1, s2);
 	}
