@@ -8,7 +8,7 @@ class Outer2{
 	final  	int num = 10; // getRunnable안에 num 10 의 지역변수
 		
 		
-		class MyRunnable implements Runnable{
+	return new Runnable(){ // 내부 클래스 가 Runnable 이 하나 이기때문에 바로 반환 해도된다 Runnable 메서드 끝나는 가로에 세미클론만 써준다.
 			int localNum= 1000;
 
 			@Override
@@ -24,10 +24,7 @@ class Outer2{
 				System.out.println("Outter.sNum = " + Outer2.sNum + "(외부 클래스 정적 변수)");
 				}
 
-			}
-			
-		
-		return new MyRunnable();
+			}; //  
 	}
 }
 public class AnonymousInnerTest {
