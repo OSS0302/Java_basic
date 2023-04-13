@@ -6,9 +6,9 @@ import java.util.List;
 public class CustomerTest {
 
 	public static void main(String[] args) {
-		Customer customerLee = new Customer("이모씨", 40, 1000000);
-		Customer customerkim = new Customer("김모씨", 45, 1000000);
-		Customer customerHong = new Customer("홍모씨", 44, 1000000);
+		Customer customerLee = new Customer("이모씨", 40, 1000000 ,"경기도 수원시");
+		Customer customerkim = new Customer("김모씨", 45, 1000000 ,"서울 특별시 영등포구 ");
+		Customer customerHong = new Customer("홍모씨", 44, 1000000,"서울 특별시 강남구 ");
 		
 		List<Customer> customerList = new ArrayList<>();
 		customerList.add(customerHong);
@@ -24,6 +24,8 @@ public class CustomerTest {
 		System.out.println("고객 여행 비행 총 금액");
 		System.out.println(customerList.stream().mapToInt(c->c.getPrice()).sum());
 		
+		System.out.println("고객님 주소 출력하기");
+		customerList.stream().map(a->a.getAddress()).forEach(s->System.out.println(s));
 	}
 
 }
