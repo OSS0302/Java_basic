@@ -21,6 +21,9 @@ public class CustomerTest {
 		customerList.stream().map(m->m.getPrice()).forEach(s->System.out.println(s));
 		 System.out.println("44세 이상인 고객님 만출력하기 ");
 		customerList.stream().filter(c->c.getAge() >=44).map(c->c.getName()).sorted().forEach(s->System.out.println(s));
+		System.out.println("고객 여행 비행 총 금액");
+		System.out.println(customerList.stream().mapToInt(c->c.getPrice()).sum());
+		
 	}
 
 }
