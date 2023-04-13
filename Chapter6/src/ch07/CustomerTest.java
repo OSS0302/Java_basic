@@ -16,9 +16,9 @@ public class CustomerTest {
 		customerList.add(customerLee);
 		
 		// 고객 출력하기 
-		System.out.println("고객 명단 출력하기");
+		System.out.println("고객 나이  출력하기");
 
-		customerList.stream().map(m->m.getName()).forEach(s->System.out.println(s));
+		customerList.stream().map(m->m.getAge()).forEach(s->System.out.println(s));
 	}
 
 }
