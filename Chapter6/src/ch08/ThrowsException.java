@@ -16,12 +16,13 @@ public class ThrowsException {
 		ThrowsException test = new ThrowsException();
 		
 		try {
-			test. loadClass ("a.txt", "abc");
+			test. loadClass ("a.txt","java.lang.String");
 			} catch (ClassNotFoundException e) {
 			System.out.println(e);
 			}catch (FileNotFoundException e) {
 			System.out.println(e);
 			}
+		System.out.println("end");
 	}
 
 
