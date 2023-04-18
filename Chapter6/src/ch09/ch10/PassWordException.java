@@ -1,3 +1,4 @@
+package ch10;
 
 public class PassWordException extends IllegalArgumentException {
 	
