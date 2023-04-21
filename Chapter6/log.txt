@@ -12,3 +12,7 @@
 경고: test
 4월 21, 2023 8:15:36 오후 ch11.MyLogger log
 심각: test
+4월 21, 2023 8:24:54 오후 ch11.MyLogger warning
+경고: name must not be null
+4월 21, 2023 8:24:54 오후 ch11.MyLogger warning
+경고: 이름이 너무 길어요
