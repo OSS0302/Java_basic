@@ -1,0 +1,4 @@
+4월 21, 2023 8:15:36 오후 ch11.MyLogger log
+경고: test
+4월 21, 2023 8:15:36 오후 ch11.MyLogger log
+심각: test
