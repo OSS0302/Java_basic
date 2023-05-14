@@ -13,6 +13,6 @@ public class Main {
 		}else{
 					System.out.println("0");
 				}
-			in.close();
+			in.close(); //함수 닫기
 		}
 }	
